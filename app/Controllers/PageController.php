@@ -13,10 +13,10 @@ class PageController {
     }
     public function home(){
 		$users = R::getAll( 'SELECT * from user_bean' );
-		\Dabl\View\View::load('home', ['users'=>$users]);
+		View::load('home', ['users'=>$users]);
 	}
 	public function getAdd(){
-		\Dabl\View\View::load('post');
+		View::load('post');
 	}
 	public function postAdd(){
 	    $user = R::dispense( 'user_bean' );
@@ -30,7 +30,7 @@ class PageController {
 	public function getEdit($url){
 		$id=$url;
 		$users = R::load( 'user_bean', $id);
-		\Dabl\View\View::load('edit', ['users'=>$users]);
+		View::load('edit', ['users'=>$users]);
 	}
 	public function postEdit($url){
 	    $users = R::load( 'user_bean', $url );
