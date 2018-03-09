@@ -4,11 +4,11 @@
 	<form action="" method="post" name="form1">
 		<table width="25%" border="0">
 			<tr> 
-				<td>Nome</td>
+				<td>Name</td>
 				<td><input type="text" name="name"></td>
 			</tr>
 			<tr> 
-				<td>Senha</td>
+				<td>Password</td>
 				<td><input type="text" name="password"></td>
 			</tr>
 			<tr> 
